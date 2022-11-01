@@ -1,0 +1,518 @@
+[
+    {
+      "name": "Jakarta, Indonesia",
+      "lat": -6.2,
+      "log": 106.816666,
+      "href": "https://www.latlong.net/place/jakarta-indonesia-27575.html"
+    },
+    {
+      "name": "Pamekasan, Pamekasan Regency, East Jawa, Indonesia",
+      "lat": -7.161367,
+      "log": 113.482498,
+      "href": "https://www.latlong.net/place/pamekasan-pamekasan-regency-east-jawa-indonesia-25911.html"
+    },
+    {
+      "name": "Banda Aceh, Banda Aceh City, Aceh, Indonesia",
+      "lat": 5.54829,
+      "log": 95.323753,
+      "href": "https://www.latlong.net/place/banda-aceh-banda-aceh-city-aceh-indonesia-25259.html"
+    },
+    {
+      "name": "Ambon, Ambon Island, Maluku, Indonesia",
+      "lat": -3.654703,
+      "log": 128.190643,
+      "href": "https://www.latlong.net/place/ambon-ambon-island-maluku-indonesia-25180.html"
+    },
+    {
+      "name": "Palopo, Wara, South Sulawesi, Indonesia",
+      "lat": -2.994494,
+      "log": 120.195465,
+      "href": "https://www.latlong.net/place/palopo-wara-south-sulawesi-indonesia-24526.html"
+    },
+    {
+      "name": "Soreang, Bandung, West Java, Indonesia",
+      "lat": -7.025253,
+      "log": 107.51976,
+      "href": "https://www.latlong.net/place/soreang-bandung-west-java-indonesia-22433.html"
+    },
+    {
+      "name": "Dumai, Dumai Province, Riau, Indonesia",
+      "lat": 1.694394,
+      "log": 101.445007,
+      "href": "https://www.latlong.net/place/dumai-dumai-province-riau-indonesia-21872.html"
+    },
+    {
+      "name": "Pematang Siantar City, North Sumatra, Indonesia",
+      "lat": 2.970042,
+      "log": 99.068169,
+      "href": "https://www.latlong.net/place/pematang-siantar-city-north-sumatra-indonesia-21657.html"
+    },
+    {
+      "name": "Banjarsari, Surakarta City, Central Java, Indonesia",
+      "lat": -7.550676,
+      "log": 110.828316,
+      "href": "https://www.latlong.net/place/banjarsari-surakarta-city-central-java-indonesia-21648.html"
+    },
+    {
+      "name": "Lhoksukon, Aceh Utara, Aceh, Indonesia",
+      "lat": 5.051701,
+      "log": 97.318123,
+      "href": "https://www.latlong.net/place/lhoksukon-aceh-utara-aceh-indonesia-15651.html"
+    },
+    {
+      "name": "Bireu√´n, Bireuen Regency, Aceh, Indonesia",
+      "lat": 5.20139,
+      "log": 96.702644,
+      "href": "https://www.latlong.net/place/bireu-n-bireuen-regency-aceh-indonesia-14827.html"
+    },
+    {
+      "name": "Trenggalek, Trenggalek Regency, East Java, Indonesia",
+      "lat": -8.08641,
+      "log": 111.713127,
+      "href": "https://www.latlong.net/place/trenggalek-trenggalek-regency-east-java-indonesia-13483.html"
+    },
+    {
+      "name": "Ponorogo, Ponorogo Regency, Jawa Timur, Indonesia",
+      "lat": -7.866688,
+      "log": 111.466614,
+      "href": "https://www.latlong.net/place/ponorogo-ponorogo-regency-jawa-timur-indonesia-13482.html"
+    },
+    {
+      "name": "Stabat, Langkat Regency, North Sumatra, Indonesia",
+      "lat": 3.750531,
+      "log": 98.470528,
+      "href": "https://www.latlong.net/place/stabat-langkat-regency-north-sumatra-indonesia-12160.html"
+    },
+    {
+      "name": "Pangkal Pinang, Bangka Belitung Islands, Indonesia",
+      "lat": -2.133333,
+      "log": 106.116669,
+      "href": "https://www.latlong.net/place/pangkal-pinang-bangka-belitung-islands-indonesia-12092.html"
+    },
+    {
+      "name": "Makassar City, Indonesia",
+      "lat": -5.135399,
+      "log": 119.42379,
+      "href": "https://www.latlong.net/place/makassar-city-indonesia-11478.html"
+    },
+    {
+      "name": "Banjar Baru City, Banjarbaru City, South Kalimantan, Indonesia",
+      "lat": -3.457242,
+      "log": 114.810318,
+      "href": "https://www.latlong.net/place/banjar-baru-city-banjarbaru-city-south-kalimantan-indonesia-11389.html"
+    },
+    {
+      "name": "Pamulang, South Tangerang City, Banten, Republic of Indonesia",
+      "lat": -6.347891,
+      "log": 106.741158,
+      "href": "https://www.latlong.net/place/pamulang-south-tangerang-city-banten-republic-of-indonesia-11278.html"
+    },
+    {
+      "name": "Jepara City, Jepara Regency, Central Java, Republic of Indonesia",
+      "lat": -6.574958,
+      "log": 110.670525,
+      "href": "https://www.latlong.net/place/jepara-city-jepara-regency-central-java-republic-of-indonesia-11275.html"
+    },
+    {
+      "name": "Manado City, North Sulawesi, Republic of Indonesia",
+      "lat": 1.47483,
+      "log": 124.842079,
+      "href": "https://www.latlong.net/place/manado-city-north-sulawesi-republic-of-indonesia-11025.html"
+    },
+    {
+      "name": "Pontianak City, West Kalimantan, Republic of Indonesia",
+      "lat": 0,
+      "log": 109.333336,
+      "href": "https://www.latlong.net/place/pontianak-city-west-kalimantan-republic-of-indonesia-10432.html"
+    },
+    {
+      "name": "Tegal City, Central Java, Republic of Indonesia",
+      "lat": -6.879704,
+      "log": 109.125595,
+      "href": "https://www.latlong.net/place/tegal-city-central-java-republic-of-indonesia-10359.html"
+    },
+    {
+      "name": "Cibinong, Bogor, West Java, Indonesia",
+      "lat": -6.497641,
+      "log": 106.828224,
+      "href": "https://www.latlong.net/place/cibinong-bogor-west-java-indonesia-9414.html"
+    },
+    {
+      "name": "Kendari City, South East Sulawesi, Indonesia",
+      "lat": -3.972201,
+      "log": 122.5149,
+      "href": "https://www.latlong.net/place/kendari-city-south-east-sulawesi-indonesia-8632.html"
+    },
+    {
+      "name": "Tangerang, Indonesia",
+      "lat": -6.178306,
+      "log": 106.631889,
+      "href": "https://www.latlong.net/place/tangerang-indonesia-8312.html"
+    },
+    {
+      "name": "Semarang, Indonesia",
+      "lat": -6.966667,
+      "log": 110.416664,
+      "href": "https://www.latlong.net/place/semarang-indonesia-7640.html"
+    },
+    {
+      "name": "Amuntai, Amuntai Tengah, Hulu Sungai Utara, Kalimantan Selatan, Indonesia",
+      "lat": -2.423779,
+      "log": 115.250832,
+      "href": "https://www.latlong.net/place/amuntai-amuntai-tengah-hulu-sungai-utara-kalimantan-selatan-indonesia-7634.html"
+    },
+    {
+      "name": "Batam, Riau Islands, Indonesia",
+      "lat": 1.045626,
+      "log": 104.030457,
+      "href": "https://www.latlong.net/place/batam-riau-islands-indonesia-7565.html"
+    },
+    {
+      "name": "Banjarmasin, South Kalimantan, Indonesia",
+      "lat": -3.316694,
+      "log": 114.590111,
+      "href": "https://www.latlong.net/place/banjarmasin-south-kalimantan-indonesia-7504.html"
+    },
+    {
+      "name": "Jambi City, Jambi, Indonesia",
+      "lat": -1.609972,
+      "log": 103.607254,
+      "href": "https://www.latlong.net/place/jambi-city-jambi-indonesia-7055.html"
+    },
+    {
+      "name": "Serang, Serang City, Banten, Indonesia",
+      "lat": -6.12,
+      "log": 106.150276,
+      "href": "https://www.latlong.net/place/serang-serang-city-banten-indonesia-6982.html"
+    },
+    {
+      "name": "Sampit, Mentawa Baru Hulu, East Kotawaringin, Central Kalimantan, Indonesia",
+      "lat": -2.539465,
+      "log": 112.958687,
+      "href": "https://www.latlong.net/place/sampit-mentawa-baru-hulu-east-kotawaringin-central-kalimantan-indonesia-6791.html"
+    },
+    {
+      "name": "Kupang City, Kupang, East Nusa Tenggara, Indonesia",
+      "lat": -10.178757,
+      "log": 123.597603,
+      "href": "https://www.latlong.net/place/kupang-city-kupang-east-nusa-tenggara-indonesia-6582.html"
+    },
+    {
+      "name": "Banjar, Banjar City, West Java, Indonesia",
+      "lat": -7.374585,
+      "log": 108.558189,
+      "href": "https://www.latlong.net/place/banjar-banjar-city-west-java-indonesia-6374.html"
+    },
+    {
+      "name": "Samarinda, East Kalimantan, Indonesia",
+      "lat": -0.502106,
+      "log": 117.153709,
+      "href": "https://www.latlong.net/place/samarinda-east-kalimantan-indonesia-6051.html"
+    },
+    {
+      "name": "Subang, Subang Province, West Java, Indonesia",
+      "lat": -6.571589,
+      "log": 107.758736,
+      "href": "https://www.latlong.net/place/subang-subang-province-west-java-indonesia-6027.html"
+    },
+    {
+      "name": "Jember, Jember, East Java, Indonesia",
+      "lat": -8.184486,
+      "log": 113.668076,
+      "href": "https://www.latlong.net/place/jember-jember-east-java-indonesia-5657.html"
+    },
+    {
+      "name": "Rancasari, Bandung, West Java, Indonesia",
+      "lat": -6.953946,
+      "log": 107.677765,
+      "href": "https://www.latlong.net/place/rancasari-bandung-west-java-indonesia-5461.html"
+    },
+    {
+      "name": "Denpasar, Bali, Indonesia",
+      "lat": -8.65,
+      "log": 115.216667,
+      "href": "https://www.latlong.net/place/denpasar-bali-indonesia-5114.html"
+    },
+    {
+      "name": "Cileunyi, Bandung, West Java, Indonesia",
+      "lat": -6.939008,
+      "log": 107.740753,
+      "href": "https://www.latlong.net/place/cileunyi-bandung-west-java-indonesia-5074.html"
+    },
+    {
+      "name": "Bogor, West Java, Indonesia",
+      "lat": -6.595038,
+      "log": 106.816635,
+      "href": "https://www.latlong.net/place/bogor-west-java-indonesia-4929.html"
+    },
+    {
+      "name": "Yogyakarta, Special Region of Yogyakarta, Indonesia",
+      "lat": -7.797068,
+      "log": 110.370529,
+      "href": "https://www.latlong.net/place/yogyakarta-special-region-of-yogyakarta-indonesia-4728.html"
+    },
+    {
+      "name": "Bontang, Bontang, East Kalimantan, Indonesia",
+      "lat": 0.133333,
+      "log": 117.5,
+      "href": "https://www.latlong.net/place/bontang-bontang-east-kalimantan-indonesia-4498.html"
+    },
+    {
+      "name": "Makasar, East Jakarta City, Jakarta, Indonesia",
+      "lat": -6.271194,
+      "log": 106.894547,
+      "href": "https://www.latlong.net/place/makasar-east-jakarta-city-jakarta-indonesia-4271.html"
+    },
+    {
+      "name": "Cirebon, Cirebon City, West Java, Indonesia",
+      "lat": -6.737246,
+      "log": 108.550659,
+      "href": "https://www.latlong.net/place/cirebon-cirebon-city-west-java-indonesia-3865.html"
+    },
+    {
+      "name": "Palembang, Indonesia",
+      "lat": -2.990934,
+      "log": 104.756554,
+      "href": "https://www.latlong.net/place/palembang-indonesia-3864.html"
+    },
+    {
+      "name": "Medan, North Sumatra, Indonesia",
+      "lat": 3.597031,
+      "log": 98.678513,
+      "href": "https://www.latlong.net/place/medan-north-sumatra-indonesia-3617.html"
+    },
+    {
+      "name": "Kediri, East Java, Indonesia",
+      "lat": -7.82284,
+      "log": 112.011864,
+      "href": "https://www.latlong.net/place/kediri-east-java-indonesia-3494.html"
+    },
+    {
+      "name": "Bekasi, West Java, Indonesia",
+      "lat": -6.241586,
+      "log": 106.992416,
+      "href": "https://www.latlong.net/place/bekasi-west-java-indonesia-3406.html"
+    },
+    {
+      "name": "Surabaya, East Java, Indonesia",
+      "lat": -7.250445,
+      "log": 112.768845,
+      "href": "https://www.latlong.net/place/surabaya-east-java-indonesia-3387.html"
+    },
+    {
+      "name": "Kanigoro, Blitar, East Java, Indonesia",
+      "lat": -8.121262,
+      "log": 112.205429,
+      "href": "https://www.latlong.net/place/kanigoro-blitar-east-java-indonesia-3379.html"
+    },
+    {
+      "name": "Balaraja, Tangerang, Banten, Indonesia",
+      "lat": -6.199264,
+      "log": 106.469193,
+      "href": "https://www.latlong.net/place/balaraja-tangerang-banten-indonesia-3340.html"
+    },
+    {
+      "name": "Jombang, East Java, Indonesia",
+      "lat": -7.546839,
+      "log": 112.226479,
+      "href": "https://www.latlong.net/place/jombang-east-java-indonesia-3306.html"
+    },
+    {
+      "name": "Batu, East Java, Indonesia",
+      "lat": -7.8671,
+      "log": 112.523903,
+      "href": "https://www.latlong.net/place/batu-east-java-indonesia-3236.html"
+    },
+    {
+      "name": "Lawang, Malang, Indonesia",
+      "lat": -7.830759,
+      "log": 112.697098,
+      "href": "https://www.latlong.net/place/lawang-malang-indonesia-3235.html"
+    },
+    {
+      "name": "Purwokerto, Banyumas, Central Java, Indonesia",
+      "lat": -7.431391,
+      "log": 109.247833,
+      "href": "https://www.latlong.net/place/purwokerto-banyumas-central-java-indonesia-3223.html"
+    },
+    {
+      "name": "Praya, Semayan, Central Lombok, Indonesia",
+      "lat": -8.72174,
+      "log": 116.288597,
+      "href": "https://www.latlong.net/place/praya-semayan-central-lombok-indonesia-3221.html"
+    },
+    {
+      "name": "Manokwari, West Papua, Indonesia",
+      "lat": -0.861453,
+      "log": 134.062042,
+      "href": "https://www.latlong.net/place/manokwari-west-papua-indonesia-3190.html"
+    },
+    {
+      "name": "Gorontalo City, Gorontalo, Indonesia",
+      "lat": 0.556174,
+      "log": 123.058548,
+      "href": "https://www.latlong.net/place/gorontalo-city-gorontalo-indonesia-3162.html"
+    },
+    {
+      "name": "Selong, East Lombok, West Nusa Tenggara, Indonesia",
+      "lat": -8.646535,
+      "log": 116.530434,
+      "href": "https://www.latlong.net/place/selong-east-lombok-west-nusa-tenggara-indonesia-3158.html"
+    },
+    {
+      "name": "Pekanbaru, Pekanbaru City, Riau, Indonesia",
+      "lat": 0.533505,
+      "log": 101.447403,
+      "href": "https://www.latlong.net/place/pekanbaru-pekanbaru-city-riau-indonesia-3122.html"
+    },
+    {
+      "name": "Yogyakarta City, Indonesia",
+      "lat": -7.797068,
+      "log": 110.370529,
+      "href": "https://www.latlong.net/place/yogyakarta-city-indonesia-3080.html"
+    },
+    {
+      "name": "Malang, East Java, Indonesia",
+      "lat": -7.983908,
+      "log": 112.621391,
+      "href": "https://www.latlong.net/place/malang-east-java-indonesia-3075.html"
+    },
+    {
+      "name": "Pariaman, West Sumatra, Indonesia",
+      "lat": -0.626439,
+      "log": 100.117958,
+      "href": "https://www.latlong.net/place/pariaman-west-sumatra-indonesia-3052.html"
+    },
+    {
+      "name": "Bandung, West Java, Indonesia",
+      "lat": -6.914864,
+      "log": 107.608238,
+      "href": "https://www.latlong.net/place/bandung-west-java-indonesia-3025.html"
+    },
+    {
+      "name": "Cibodas, Cianjur, West Java, Indonesia",
+      "lat": -6.734679,
+      "log": 107.041252,
+      "href": "https://www.latlong.net/place/cibodas-cianjur-west-java-indonesia-2750.html"
+    },
+    {
+      "name": "Garut, Indonesia",
+      "lat": -7.227906,
+      "log": 107.908699,
+      "href": "https://www.latlong.net/place/garut-indonesia-2456.html"
+    },
+    {
+      "name": "Probolinggo, Probolinggo City, East Java, Indonesia",
+      "lat": -7.756928,
+      "log": 113.211502,
+      "href": "https://www.latlong.net/place/probolinggo-probolinggo-city-east-java-indonesia-2431.html"
+    },
+    {
+      "name": "Bandar Lampung, Lampung, Indonesia",
+      "lat": -5.45,
+      "log": 105.26667,
+      "href": "https://www.latlong.net/place/bandar-lampung-lampung-indonesia-2234.html"
+    },
+    {
+      "name": "Depok, West Java, Indonesia",
+      "lat": -6.385589,
+      "log": 106.830711,
+      "href": "https://www.latlong.net/place/depok-west-java-indonesia-1786.html"
+    },
+    {
+      "name": "Bandung, West Java, Indonesia",
+      "lat": -6.905977,
+      "log": 107.613144,
+      "href": "https://www.latlong.net/place/bandung-west-java-indonesia-1667.html"
+    },
+    {
+      "name": "Tasikmalaya, West Java, Indonesia",
+      "lat": -7.319563,
+      "log": 108.202972,
+      "href": "https://www.latlong.net/place/tasikmalaya-west-java-indonesia-1359.html"
+    },
+    {
+      "name": "Sibolga, Sibolga City, North Sumatra, Indonesia",
+      "lat": 1.749987,
+      "log": 98.776703,
+      "href": "https://www.latlong.net/place/sibolga-sibolga-city-north-sumatra-indonesia-1335.html"
+    },
+    {
+      "name": "Cibubur, Depok, West Java, Indonesia",
+      "lat": -6.373519,
+      "log": 106.875984,
+      "href": "https://www.latlong.net/place/cibubur-depok-west-java-indonesia-1315.html"
+    },
+    {
+      "name": "Bandung, West Java, Indonesia",
+      "lat": -6.914744,
+      "log": 107.60981,
+      "href": "https://www.latlong.net/place/bandung-west-java-indonesia-1200.html"
+    },
+    {
+      "name": "Maumere, Baru City, East Alok, Sikka, Indonesia",
+      "lat": -8.625253,
+      "log": 122.221458,
+      "href": "https://www.latlong.net/place/maumere-baru-city-east-alok-sikka-indonesia-1118.html"
+    },
+    {
+      "name": "Indramayu, West Java, Republic of Indonesia.",
+      "lat": -6.327583,
+      "log": 108.324936,
+      "href": "https://www.latlong.net/place/indramayu-west-java-republic-of-indonesia-917.html"
+    },
+    {
+      "name": "Sukabumi, West Java, Republic of Indonesia",
+      "lat": -6.9237,
+      "log": 106.928726,
+      "href": "https://www.latlong.net/place/sukabumi-west-java-republic-of-indonesia-906.html"
+    },
+    {
+      "name": "Batam, Indonesia",
+      "lat": 1.082828,
+      "log": 104.030457,
+      "href": "https://www.latlong.net/place/batam-indonesia-899.html"
+    },
+    {
+      "name": "Binjai, North Sumatra, Republic of Indonesia",
+      "lat": 3.598401,
+      "log": 98.489166,
+      "href": "https://www.latlong.net/place/binjai-north-sumatra-republic-of-indonesia-880.html"
+    },
+    {
+      "name": "Cianjur, West Java, Republic of Indonesia",
+      "lat": -6.820762,
+      "log": 107.14296,
+      "href": "https://www.latlong.net/place/cianjur-west-java-republic-of-indonesia-875.html"
+    },
+    {
+      "name": "Pekanbaru, Riau, Indonesia",
+      "lat": 0.51044,
+      "log": 101.438309,
+      "href": "https://www.latlong.net/place/pekanbaru-riau-indonesia-748.html"
+    },
+    {
+      "name": "Martapura, South Kalimantan, Indonesia",
+      "lat": -3.409927,
+      "log": 114.847298,
+      "href": "https://www.latlong.net/place/martapura-south-kalimantan-indonesia-737.html"
+    },
+    {
+      "name": "Balikpapan, Indonesia",
+      "lat": -1.26916,
+      "log": 116.825264,
+      "href": "https://www.latlong.net/place/balikpapan-indonesia-603.html"
+    },
+    {
+      "name": "Pekalongan, Indonesia",
+      "lat": -6.888701,
+      "log": 109.668289,
+      "href": "https://www.latlong.net/place/pekalongan-indonesia-545.html"
+    },
+    {
+      "name": "Balikpapan, Indonesia",
+      "lat": -1.265386,
+      "log": 116.8312,
+      "href": "https://www.latlong.net/place/balikpapan-indonesia-457.html"
+    }
+  ]

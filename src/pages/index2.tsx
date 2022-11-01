@@ -44,7 +44,8 @@ const random = (min: number, max: number) => Math.floor(Math.random() * (max - m
 
 const Home: NextPage = () => (
   <AdminLayout>
-    <div className="row">
+    
+    {/* <div className="row">
       <div className="col-sm-6 col-lg-3">
         <Card bg="primary" text="white" className="mb-4">
           <Card.Body className="pb-0 d-flex justify-content-between align-items-start">
@@ -131,6 +132,7 @@ const Home: NextPage = () => (
             />
           </div>
         </Card>
+        
       </div>
 
       <div className="col-sm-6 col-lg-3">
@@ -371,9 +373,9 @@ const Home: NextPage = () => (
           </div>
         </Card>
       </div>
-    </div>
+    </div> */}
 
-    <Card className="mb-4">
+    {/* <Card className="mb-4">
       <Card.Body>
         <div className="d-flex justify-content-between">
           <div>
@@ -552,9 +554,9 @@ const Home: NextPage = () => (
           </div>
         </div>
       </Card.Footer>
-    </Card>
+    </Card> */}
 
-    <div className="row">
+    {/* <div className="row">
       <div className="col-sm-6 col-lg-4">
         <Card
           className="mb-4"
@@ -642,9 +644,9 @@ const Home: NextPage = () => (
         </Card>
       </div>
 
-    </div>
+    </div> */}
 
-    <div className="row">
+    {/* <div className="row">
       <div className="col-md-12">
         <Card className="mb-4">
           <Card.Header>
@@ -1364,8 +1366,9 @@ const Home: NextPage = () => (
           </Card.Body>
         </Card>
       </div>
-    </div>
+    </div> */}
   </AdminLayout>
+  
 )
 
 export default Home

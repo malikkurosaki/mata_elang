@@ -31,7 +31,8 @@ export default function Sidebar(props: { isShow: boolean; isShowMd: boolean }) {
       })}
       id="sidebar"
     >
-      <div className="sidebar-brand d-none d-md-flex align-items-center justify-content-center">
+      <div className='p-4 h4'>BIP</div>
+      {/* <div className="sidebar-brand d-none d-md-flex align-items-center justify-content-center">
         <svg
           className="sidebar-brand-full"
           width="118"
@@ -48,7 +49,7 @@ export default function Sidebar(props: { isShow: boolean; isShowMd: boolean }) {
           <title>CoreUI Logo</title>
           <use xlinkHref="/assets/brand/coreui.svg#signet" />
         </svg>
-      </div>
+      </div> */}
 
       <div className="sidebar-nav flex-fill">
         <SidebarNav />

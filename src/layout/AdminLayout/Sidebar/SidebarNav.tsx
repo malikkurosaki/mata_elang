@@ -9,12 +9,14 @@ import {
 import {
   faBug,
   faCalculator,
+  faChartBar,
   faChartPie,
   faChevronUp, faCode,
   faDroplet,
   faGauge,
   faLayerGroup,
   faLocationArrow,
+  faMap,
   faPencil,
   faPuzzlePiece,
   faRightToBracket,
@@ -131,18 +133,25 @@ export default function SidebarNav() {
     <ul className="list-unstyled">
       <SidebarNavItem icon={faGauge} href="/">
         Dashboard
-        <small className="ms-auto"><Badge bg="info" className="ms-auto">NEW</Badge></small>
+        {/* <small className="ms-auto"><Badge bg="info" className="ms-auto">NEW</Badge></small> */}
       </SidebarNavItem>
       <SidebarNavItem icon={faCode} href="/pokemons">
-        Sample
-        <small className="ms-auto"><Badge bg="danger" className="ms-auto">DEMO</Badge></small>
+        laporan
+        {/* <small className="ms-auto"><Badge bg="danger" className="ms-auto">DEMO</Badge></small> */}
       </SidebarNavItem>
-      <SidebarNavTitle>Theme</SidebarNavTitle>
+      <SidebarNavItem icon={faMap} href="/contoh">
+        TopoGraphy
+      </SidebarNavItem>
+      <SidebarNavItem icon={faChartBar} href="/race-spirit">
+        Race Spirit
+      </SidebarNavItem>
+
+      {/* <SidebarNavTitle>Theme</SidebarNavTitle>
       <SidebarNavItem icon={faDroplet} href="colors.html">Colors</SidebarNavItem>
       <SidebarNavItem icon={faPencil} href="typography.html">Typography</SidebarNavItem>
-      <SidebarNavTitle>Components</SidebarNavTitle>
+      <SidebarNavTitle>Components</SidebarNavTitle> */}
 
-      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText="Base">
+      {/* <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText="Base">
         <SidebarNavItem href="base/accordion.html">Accordion</SidebarNavItem>
         <SidebarNavItem href="base/breadcrumb.html">Breadcrumb</SidebarNavItem>
         <SidebarNavItem href="base/cards.html">Cards</SidebarNavItem>
@@ -158,9 +167,9 @@ export default function SidebarNav() {
         <SidebarNavItem href="base/tables.html">Tables</SidebarNavItem>
         <SidebarNavItem href="base/tabs.html">Tabs</SidebarNavItem>
         <SidebarNavItem href="base/tooltips.html">Tooltips</SidebarNavItem>
-      </SidebarNavGroup>
+      </SidebarNavGroup> */}
 
-      <SidebarNavGroup toggleIcon={faLocationArrow} toggleText="Buttons">
+      {/* <SidebarNavGroup toggleIcon={faLocationArrow} toggleText="Buttons">
         <SidebarNavItem href="buttons/buttons.html">Buttons</SidebarNavItem>
         <SidebarNavItem href="buttons/button-group.html">Buttons Group</SidebarNavItem>
         <SidebarNavItem href="buttons/dropdowns.html">Dropdowns</SidebarNavItem>
@@ -207,7 +216,7 @@ export default function SidebarNav() {
       </SidebarNavGroup>
 
       <SidebarNavItem icon={faFileLines} href="docs.html">Docs</SidebarNavItem>
-      <SidebarNavItem icon={faLayerGroup} href="https://coreui.io/pro/">Try CoreUI PRO</SidebarNavItem>
+      <SidebarNavItem icon={faLayerGroup} href="https://coreui.io/pro/">Try CoreUI PRO</SidebarNavItem> */}
     </ul>
   )
 }

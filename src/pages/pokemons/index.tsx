@@ -210,7 +210,8 @@ const Pokemons: NextPage<Props> = (props) => {
 
   return (
     <AdminLayout>
-      <Card>
+      laporan
+      {/* <Card>
         <Card.Header>Pokémon</Card.Header>
         <Card.Body>
           <Pagination meta={meta} />
@@ -288,7 +289,7 @@ const Pokemons: NextPage<Props> = (props) => {
           </Table>
           <Pagination meta={meta} />
         </Card.Body>
-      </Card>
+      </Card> */}
     </AdminLayout>
   )
 }
