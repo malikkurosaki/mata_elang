@@ -1,6 +1,7 @@
-import {AdminLayout} from "@layout";
+
+import { AdminLayout } from '@layout';
 import ReactEchart from 'echarts-for-react';
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 
 // const RaceSpirit: NextPage < Props > = (props) => {
 //     return (
@@ -36,21 +37,21 @@ const countryColors = {
     'United States': '#b22234'
 };
 
-function RaceSpirit({flags, data}) {
+function RaceSpirit({ flags, data }) {
     const [options, setOption] = useState({})
     const years = [];
 
     useEffect(() => {
-        for (let i = 0; i < data.length; ++ i) {
+        for (let i = 0; i < data.length; ++i) {
             if (years.length === 0 || years[years.length - 1] !== data[i][4]) {
                 years.push(data[i][4]);
             }
         }
         function getFlag(countryName) {
-            if (! countryName) {
+            if (!countryName) {
                 return '';
             }
-            return(flags.find(function (item) {
+            return (flags.find(function (item) {
                 return item.name === countryName;
             }) || {}).emoji;
         }
@@ -142,7 +143,7 @@ function RaceSpirit({flags, data}) {
         };
         // console.log(option);
         setOption(option);
-        for (let i = startIndex; i < years.length - 1; ++ i) {
+        for (let i = startIndex; i < years.length - 1; ++i) {
             (function (i) {
                 setTimeout(function () {
                     updateYear(years[i + 1]);
@@ -162,27 +163,22 @@ function RaceSpirit({flags, data}) {
 
     return (
         <AdminLayout>
-            <div style={
-                {
-                    width: 100 + "vh",
-                    height: 100 + "vh"
-                }
-            }>
-                <ReactEchart option={options}/>
+            <div >
+                <ReactEchart style={{ height: 80 + "vh" }} option={options} />
             </div>
         </AdminLayout>
     )
 }
 export async function getServerSideProps() {
     var ROOT_PATH = 'https://echarts.apache.org/examples';
-    let flags = await(await fetch('https://fastly.jsdelivr.net/npm/emoji-flags@1.3.0/data.json')).json();
-    let data = await(await fetch(ROOT_PATH + '/data/asset/data/life-expectancy-table.json')).json()
+    let flags = await (await fetch('https://fastly.jsdelivr.net/npm/emoji-flags@1.3.0/data.json')).json();
+    let data = await (await fetch(ROOT_PATH + '/data/asset/data/life-expectancy-table.json')).json()
     return {
         props: {
             flags,
             data
         }
     }
-    
+
 }
 export default RaceSpirit;

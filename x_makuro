@@ -1,0 +1,43 @@
+#!/usr/bin/env node
+
+const prompts = require('prompts');
+const dashboardScore = require('./x_seed/dashboard_score.json');
+const prisma = new (require('@prisma/client').PrismaClient)();
+
+
+prompts({
+    type: "autocomplete",
+    message: "pilih menu",
+    name: "menu",
+    choices: [
+        { title: "dashboard score", value: "ds" },
+    ]
+
+}).then(async ({ menu }) => {
+    if (!menu) return console.log("ok bye ...");
+    if (menu == "ds") {
+        let id = 0;
+        console.log("coba menyimpan ... ")
+        for (let itm of dashboardScore) {
+            id++;
+            itm.idx = id;
+            itm.score = Number.parseInt(itm.score);
+            delete itm.profileId
+
+
+            await prisma.dashboardScore.upsert({
+                where: {
+                    id: id.toString()
+                },
+                create: itm,
+                update: itm
+
+            })
+
+        }
+
+        console.log("berhasil disimpan")
+    }
+
+
+})

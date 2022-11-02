@@ -1,24 +1,22 @@
-import Image from "next/image";
-import ChartPerforma from "./chart_performa";
+import AdminScoreWidget from "./admin_score_widget";
+import ChartLineDashboard from "./chart_line_dashboard";
 
+let ModelData = {
+    name: "",
+    score: ""
+}
+
+/**
+ * @param {object} params 
+ * @param {ModelData[]} params.data
+ */
 function AdminHome({ data }) {
-    return (
-        <div>
-            <div className="d-flex justify-content-center">
-                <Image className="rounded-circle"
-                    width={200}
-                    height={200}
-                    src='/api/img/Prabowo%20Subianto.png' />
-            </div>
-            <div className="d-flex justify-content-center p-2">
-                Prabowo Subianto
-            </div>
-            <div className="d-flex justify-content-center">
-                <ChartPerforma />
-            </div>
-
+    return <div>
+        <AdminScoreWidget data={data} />
+        <div style={{ height: 100 }}>
         </div>
-    )
+        <ChartLineDashboard />
+    </div>
 }
 
 export default AdminHome;

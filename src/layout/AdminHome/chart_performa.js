@@ -2,7 +2,7 @@ import Echart from 'echarts-for-react'
 import { useEffect, useState } from 'react'
 
 
-function ChartPerforma({width, height}) {
+function ChartPerforma({ width, height, className }) {
     const [options, setOption] = useState();
 
     useEffect(() => {
@@ -35,13 +35,11 @@ function ChartPerforma({width, height}) {
         setOption(option)
     }, [])
 
-    return (
-        <div style={{height: height??300, width: width??300}} >
-            {
-                options ? <Echart option={options} /> : <div>loading ...</div>
-            }
-        </div>
-    )
+    return <div key={Math.random()}>
+        {
+            options ? <Echart option={options} /> : <div>loading ...</div>
+        }
+    </div>
 }
 
 export default ChartPerforma;
