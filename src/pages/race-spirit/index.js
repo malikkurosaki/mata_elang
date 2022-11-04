@@ -1,7 +1,9 @@
 
 import { AdminLayout } from '@layout';
 import ReactEchart from 'echarts-for-react';
-import { useEffect, useState } from "react";
+import { useHookstate } from '@hookstate/core'
+import { useEffect, useMemo, useState } from 'react';
+// import { useEffect, useState } from "react";
 
 // const RaceSpirit: NextPage < Props > = (props) => {
 //     return (
@@ -15,33 +17,66 @@ var option;
 
 const updateFrequency = 2000;
 const dimension = 0;
-const countryColors = {
-    Australia: '#00008b',
-    Canada: '#f00',
-    China: '#ffde00',
-    Cuba: '#002a8f',
-    Finland: '#003580',
-    France: '#ed2939',
-    Germany: '#000',
-    Iceland: '#003897',
-    India: '#f93',
-    Japan: '#bc002d',
-    'North Korea': '#024fa2',
-    'South Korea': '#000',
-    'New Zealand': '#00247d',
-    Norway: '#ef2b2d',
-    Poland: '#dc143c',
-    Russia: '#d52b1e',
-    Turkey: '#e30a17',
-    'United Kingdom': '#00247d',
-    'United States': '#b22234'
-};
+// const countryColors = {
+//     Australia: '#00008b',
+//     Canada: '#f00',
+//     China: '#ffde00',
+//     Cuba: '#002a8f',
+//     Finland: '#003580',
+//     France: '#ed2939',
+//     Germany: '#000',
+//     Iceland: '#003897',
+//     India: '#f93',
+//     Japan: '#bc002d',
+//     'North Korea': '#024fa2',
+//     'South Korea': '#000',
+//     'New Zealand': '#00247d',
+//     Norway: '#ef2b2d',
+//     Poland: '#dc143c',
+//     Russia: '#d52b1e',
+//     Turkey: '#e30a17',
+//     'United Kingdom': '#00247d',
+//     'United States': '#b22234'
+// };
 
-function RaceSpirit({ flags, data }) {
+const countryColors = {
+    "Prabowo Subianto": 'orange',
+    "Anies Baswedan": 'green',
+    "Ganjar Pranowo": 'pink',
+    "Sandiaga Uno": 'cyan',
+    "Ridwan Kamil": 'silver',
+    "Puan Maharani": 'red',
+    "Dedi Mulyadi": 'maroon',
+    "Moeldoko": 'navy',
+    "Airlangga Hartarto": 'teal',
+    "Erick Thohir": 'lime',
+    "Arsjad Rasjid": 'urple',
+    "Khofifah Indar": 'yellow',
+    "Agus Harimurti": 'blue',
+}
+
+
+
+function RaceSpirit({ data, flags }) {
     const [options, setOption] = useState({})
-    const years = [];
+
+
+    // const gFlag = fetch('/api/dashboard/flags').then(e => e.text())
+    // const gData = fetch('/api/dashboard/race').then(e => e.text())
+
+    // const flagState = useHookstate(gFlag);
+    // const dataState = useHookstate(gData);
+
+    // if (flagState.promised || dataState.promised) return <AdminLayout>
+    //     loading ...
+    // </AdminLayout>
+
+    // let data = JSON.parse(dataState.value);
+    // let flags = JSON.parse(flagState.value);
 
     useEffect(() => {
+        let years = [];
+
         for (let i = 0; i < data.length; ++i) {
             if (years.length === 0 || years[years.length - 1] !== data[i][4]) {
                 years.push(data[i][4]);
@@ -55,6 +90,7 @@ function RaceSpirit({ flags, data }) {
                 return item.name === countryName;
             }) || {}).emoji;
         }
+
         let startIndex = 10;
         let startYear = years[startIndex];
         let option = {
@@ -85,7 +121,7 @@ function RaceSpirit({ flags, data }) {
                     show: true,
                     fontSize: 14,
                     formatter: function (value) {
-                        return value + '{flag|' + getFlag(value) + '}';
+                        return value;
                     },
                     rich: {
                         flag: {
@@ -141,8 +177,8 @@ function RaceSpirit({ flags, data }) {
                 ]
             }
         };
-        // console.log(option);
-        setOption(option);
+
+        setOption(options)
         for (let i = startIndex; i < years.length - 1; ++i) {
             (function (i) {
                 setTimeout(function () {
@@ -150,15 +186,17 @@ function RaceSpirit({ flags, data }) {
                 }, (i - startIndex) * updateFrequency);
             })(i);
         }
+
         function updateYear(year) {
             let source = data.slice(1).filter(function (d) {
                 return d[4] === year;
             });
             option.series[0].data = source;
             option.graphic.elements[0].style.text = year;
-            setOption(option);
+            setOption(option)
         }
-    }, [])
+    }, [setOption])
+
 
 
     return (
@@ -169,10 +207,13 @@ function RaceSpirit({ flags, data }) {
         </AdminLayout>
     )
 }
+
+
 export async function getServerSideProps() {
-    var ROOT_PATH = 'https://echarts.apache.org/examples';
-    let flags = await (await fetch('https://fastly.jsdelivr.net/npm/emoji-flags@1.3.0/data.json')).json();
-    let data = await (await fetch(ROOT_PATH + '/data/asset/data/life-expectancy-table.json')).json()
+
+    let flags = await (await fetch('http:localhost:3000/api/dashboard/flags')).json();
+    let data = await (await fetch('http:localhost:3000/api/dashboard/race')).json()
+
     return {
         props: {
             flags,
