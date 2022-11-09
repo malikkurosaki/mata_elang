@@ -16,4 +16,5 @@ model DashboardScore {
   name  String?
   score Int?
   idx   Int?
+  xscore Int?
 }

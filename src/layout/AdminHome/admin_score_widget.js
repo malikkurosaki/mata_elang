@@ -1,18 +1,34 @@
-import ChartPerforma from "./chart_performa";
-import { v4 } from 'uuid'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSortDown, faSortUp } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useHookstate } from "@hookstate/core";
+import { useEffect } from "react";
+import { scoreState, testSocketState } from "../../hstate";
+import ChartPerforma from "./chart_performa";
 
-/**
- * @param {object} params 
- * @param {ModelData[]} params.data
- */
-function AdminScoreWidget({ data }) {
+function AdminScoreWidget() {
+    const score = useHookstate(scoreState)
+    const testSocket = useHookstate(testSocketState)
+
+    console.log("bergetar");
+    useEffect(() => {
+        fetch('/api/dashboard/dashboard-score').then(e => e.json()).then(e => score.set(e))
+    }, [])
+
+    if (score.get().length == 0) return <div>loading ...</div>
     return <div>
+        <AdminScoreWidgetBody data={score.get()} />
+    </div>
+}
+
+const AdminScoreWidgetBody = ({ data }) => {
+    let prabowo = data.find((e) => e.name == "Prabowo Subianto")
+    if (!prabowo) return <div>loading ...</div>
+    return <div>
+        {JSON.stringify(data)}
         <div className="d-flex flex-row justify-content-center align-items-center">
             <div style={{ height: 300 }} className="d-flex flex-row justify-content-center align-items-end">
                 <div style={{ width: 250, height: 250 }} className="">
-                    <ChartPerforma width={250} height={250} />
+                    <ChartPerforma width={250} height={250} score={prabowo.score ?? 0} />
                 </div>
                 <div
                     style={{ width: 300, height: 300 }}
@@ -26,7 +42,7 @@ function AdminScoreWidget({ data }) {
         </div>
         <div>
             <div className="h3 d-flex flex-row justify-content-center">
-                Prabowo Subianto
+                {prabowo.name ?? ""}
             </div>
             <div
                 className="bg-light p-2 d-flex flex-column justify-content-center">

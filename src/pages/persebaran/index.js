@@ -1,17 +1,20 @@
-import { StateFragment } from "@hookstate/core";
-import { useEffect, useState } from "react";
+import { StateFragment, useHookstate } from "@hookstate/core";
+import { useEffect, useMemo, useState } from "react";
+import store from "store2";
 import AdminLayout from "../../layout/AdminLayout/AdminLayout";
-import xstate from "../../xstate";
+import xstate, { accessGlobalState, coba, gState, useGlobalState } from "../../xstate";
 
+let berapa = 0;
 const Persebaran = () => {
-    useState(() => {
-        xstate.persebaranState.set(val => val = { "nama": "siapa kira kira" })
-    })
+    const state = useHookstate(coba);
+    useEffect(() => {
+        state.set(store("apa"))
+        console.log("apakah berubah")
+    }, [])
+
     return <AdminLayout >
-        Persebaran
-        <StateFragment state={xstate.persebaranState} >
-            {val => <div>under contruction ...</div>}
-        </StateFragment>
+        {state.value}
+        <button onClick={() => state.set("emangnya siapa")}>tekan aja</button>
     </AdminLayout>
 }
 

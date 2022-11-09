@@ -1,20 +1,11 @@
 import AdminScoreWidget from "./admin_score_widget";
 import ChartLineDashboard from "./chart_line_dashboard";
 
-let ModelData = {
-    name: "",
-    score: ""
-}
+function AdminHome() {
 
-/**
- * @param {object} params 
- * @param {ModelData[]} params.data
- */
-function AdminHome({ data }) {
     return <div>
-        <AdminScoreWidget data={data} />
-        <div style={{ height: 100 }}>
-        </div>
+        <AdminScoreWidget />
+        <div style={{ height: 100 }} />
         <ChartLineDashboard />
     </div>
 }

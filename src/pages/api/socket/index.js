@@ -9,10 +9,11 @@ const SocketHandler = (req, res) => {
         res.socket.server.io = io
 
         io.on('connection', socket => {
-            SocketServer.socket = socket;
             socket.emit("apa", "apa kabarnya")
         })
+
     }
+
     res.end()
 }
 
