@@ -4,6 +4,7 @@ import { useHookstate } from "@hookstate/core";
 import { useEffect } from "react";
 import { scoreState, testSocketState } from "../../hstate";
 import ChartPerforma from "./chart_performa";
+import moment from "moment";
 
 function AdminScoreWidget() {
     const score = useHookstate(scoreState)
@@ -24,7 +25,10 @@ const AdminScoreWidgetBody = ({ data }) => {
     let prabowo = data.find((e) => e.name == "Prabowo Subianto")
     if (!prabowo) return <div>loading ...</div>
     return <div>
-        {JSON.stringify(data)}
+        {/* {JSON.stringify(data)} */}
+        <center>
+            <div className="h4">{moment().format('YYYY - MM - DD / hh:mm')}</div>
+        </center>
         <div className="d-flex flex-row justify-content-center align-items-center">
             <div style={{ height: 300 }} className="d-flex flex-row justify-content-center align-items-end">
                 <div style={{ width: 250, height: 250 }} className="">
@@ -46,8 +50,9 @@ const AdminScoreWidgetBody = ({ data }) => {
             </div>
             <div
                 className="bg-light p-2 d-flex flex-column justify-content-center">
-                <FontAwesomeIcon size="2x" color="green" icon={faSortUp} />
-                <FontAwesomeIcon color="grey" icon={faSortDown} />
+                <FontAwesomeIcon size="2x" color={prabowo.score > prabowo.xscore ? "green" : prabowo.score == prabowo.xscore ? "green" : "white"} icon={faSortUp} />
+                <div className="d-flex justify-content-center">{prabowo.score + "/" + prabowo.xscore}</div>
+                <FontAwesomeIcon size="2x" color={prabowo.score > prabowo.xscore ? "white" : prabowo.score == prabowo.xscore ? "green" : "red"} icon={faSortDown} />
             </div>
         </div>
         <div style={{ height: 100 }}></div>
@@ -78,8 +83,9 @@ const AdminScoreWidgetBody = ({ data }) => {
                             </div>
                             <div
                                 className="bg-light p-2 d-flex flex-column justify-content-center">
-                                <FontAwesomeIcon size="2x" color="green" icon={faSortUp} />
-                                <FontAwesomeIcon color="grey" icon={faSortDown} />
+                                <FontAwesomeIcon color={e.score > e.xscore ? "green" : e.score == e.xscore ? "green" : "white"} icon={faSortUp} />
+                                <div className="d-flex justify-content-center">{e.score + "/" + e.xscore}</div>
+                                <FontAwesomeIcon color={e.score > e.xscore ? "white" : e.score == e.xscore ? "green" : "red"} icon={faSortDown} />
                             </div>
                         </div>
                     </div>
