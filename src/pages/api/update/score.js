@@ -27,7 +27,11 @@ export default handler(async (req, res) => {
             })
         }
 
-        req.socket.server.io.emit("update_dashboard", true)
+        if(!req.socket.server.io){
+            await fetch("http://localhost:3000/api/socket")
+        }
+
+        req.socket.server.io.emit("update_dashboard score", true)
         res.status(201).send("Success")
     } else {
         res.status(405).send("Not Allowed")
