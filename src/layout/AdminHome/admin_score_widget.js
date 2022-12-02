@@ -27,7 +27,7 @@ const AdminScoreWidgetBody = ({ data }) => {
     return <div>
         {/* {JSON.stringify(data)} */}
         <center>
-            <div className="h4">{moment().format('YYYY - MM - DD / hh:mm')}</div>
+            <div className="h4">{moment().format('DD - MM - YYYY')}</div>
         </center>
         <div className="d-flex flex-row justify-content-center align-items-center">
             <div style={{ height: 300 }} className="d-flex flex-row justify-content-center align-items-end">

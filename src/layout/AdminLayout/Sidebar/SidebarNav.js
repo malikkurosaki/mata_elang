@@ -25,13 +25,13 @@ const listNav = [
         "icon": faGauge
     },
     {
-        "name": "Penyebaran",
-        "link": "/penyebaran",
+        "name": "Topography",
+        "link": "/topography",
         "icon": faGauge
     },
     {
-        "name": "Topography",
-        "link": "/topography",
+        "name": "Penyebaran",
+        "link": "/penyebaran",
         "icon": faGauge
     },
     {
